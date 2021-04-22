@@ -1,0 +1,39 @@
+<div style="display: flex">
+  <div style="display: flex; flex-direction: column; width: 80%">
+    <div>
+      <video #webcamVideo></video>
+    </div>
+    <div>
+      <table>
+        <tr>
+          <th>Nombre</th>
+          <th>Probabilidad</th>
+        </tr>
+        <tr *ngFor="let prediction of predictions">
+          <td>
+            {{ prediction.className }}
+          </td>
+          <td>
+            {{ prediction.probability }}
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div style="width: 80%">
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <th>Probabilidad</th>
+      </tr>
+      <tr *ngFor="let prediction of topHistoryPredictions">
+        <td>
+          {{ prediction.className }}
+        </td>
+        <td>
+          {{ prediction.probability }}
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
