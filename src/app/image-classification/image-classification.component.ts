@@ -7,9 +7,7 @@ import {
   ViewChild,
 } from '@angular/core';
 
-import '@tensorflow/tfjs-backend-webgl';
 import * as mobilenet from '@tensorflow-models/mobilenet';
-import * as tf from '@tensorflow/tfjs';
 import { TfWebCamService } from '../tf-web-cam/tf-web-cam.service';
 
 @Component({
@@ -38,16 +36,11 @@ export class ImageClassificationComponent implements AfterContentInit {
           await this.addProb(element);
         });
       });
-    }, 5000);
-    /*      
-    
-      while (true) {
-        
-        
-        
-        
-        console.log(this.topHistoryPredictions.map((x: any) => x.probability));
+    }, 2000);
 
+    /*      
+      while (true) {
+                console.log(this.topHistoryPredictions.map((x: any) => x.probability));
       }
     };
     */

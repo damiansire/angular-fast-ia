@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ImageClassificationComponent } from './image-classification/image-classification.component';
 import { TfWebCamComponent } from './tf-web-cam/tf-web-cam.component';
+import { HandposeComponent } from './handpose/handpose.component';
+import { HandposeCanvasComponent } from './handpose/handpose-canvas/handpose-canvas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ImageClassificationComponent,
-    TfWebCamComponent
+    TfWebCamComponent,
+    HandposeComponent,
+    HandposeCanvasComponent
   ],
   imports: [
     BrowserModule,
