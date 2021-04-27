@@ -7,6 +7,8 @@ import { ImageClassificationComponent } from './image-classification/image-class
 import { TfWebCamComponent } from './tf-web-cam/tf-web-cam.component';
 import { HandposeComponent } from './handpose/handpose.component';
 import { HandposeCanvasComponent } from './handpose/handpose-canvas/handpose-canvas.component';
+import { FaceLandmarksComponent } from './face-landmarks/face-landmarks.component';
+import { FaceLandmarksCanvasComponent } from './face-landmarks/face-landmarks-canvas/face-landmarks-canvas.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { HandposeCanvasComponent } from './handpose/handpose-canvas/handpose-can
     ImageClassificationComponent,
     TfWebCamComponent,
     HandposeComponent,
-    HandposeCanvasComponent
+    HandposeCanvasComponent,
+    FaceLandmarksComponent,
+    FaceLandmarksCanvasComponent
   ],
   imports: [
     BrowserModule,
