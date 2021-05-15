@@ -10,7 +10,13 @@ import { HandposeCanvasComponent } from './handpose/handpose-canvas/handpose-can
 import { FaceLandmarksComponent } from './face-landmarks/face-landmarks.component';
 import { FaceLandmarksCanvasComponent } from './face-landmarks/face-landmarks-canvas/face-landmarks-canvas.component';
 import { KnnClassifierComponent } from './knn-classifier/knn-classifier.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MenuComponent } from './menu/menu.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,8 +27,18 @@ import { KnnClassifierComponent } from './knn-classifier/knn-classifier.componen
     FaceLandmarksComponent,
     FaceLandmarksCanvasComponent,
     KnnClassifierComponent,
+    MenuComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSidenavModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule,
+    MatButtonModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
