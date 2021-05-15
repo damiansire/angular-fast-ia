@@ -28,7 +28,6 @@ export class ImageClassificationComponent implements AfterContentInit {
     this.minProb = 1;
     this.model = await mobilenet.load();
     setTimeout(async () => {
-      console.log('estoy en timeout');
       let prueba = this.webcamService.getCamObservable();
       prueba.subscribe(async (frame: any) => {
         this.predictions = await this.model?.classify(frame);
@@ -37,15 +36,6 @@ export class ImageClassificationComponent implements AfterContentInit {
         });
       });
     }, 2000);
-
-    /*      
-      while (true) {
-                console.log(this.topHistoryPredictions.map((x: any) => x.probability));
-      }
-    };
-    */
-
-    //Todo refactor
   }
 
   //TODO: Refactor

@@ -9,6 +9,7 @@ import { HandposeComponent } from './handpose/handpose.component';
 import { HandposeCanvasComponent } from './handpose/handpose-canvas/handpose-canvas.component';
 import { FaceLandmarksComponent } from './face-landmarks/face-landmarks.component';
 import { FaceLandmarksCanvasComponent } from './face-landmarks/face-landmarks-canvas/face-landmarks-canvas.component';
+import { KnnClassifierComponent } from './knn-classifier/knn-classifier.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +19,11 @@ import { FaceLandmarksCanvasComponent } from './face-landmarks/face-landmarks-ca
     HandposeComponent,
     HandposeCanvasComponent,
     FaceLandmarksComponent,
-    FaceLandmarksCanvasComponent
+    FaceLandmarksCanvasComponent,
+    KnnClassifierComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
